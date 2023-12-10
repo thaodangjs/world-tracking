@@ -8,6 +8,7 @@ import AppLayout from "./pages/AppLayout";
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
 import { CitiesProvider } from "./contexts/CitiesContext";
+import City from "./components/City";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="app" element={<AppLayout />}>
             <Route index element={<CityList />} />
             <Route path="cities" element={<CityList />} />
+            <Route path="cities/:id" element={<City />} />
             <Route path="countries" element={<CountryList />} />
           </Route>
           <Route path="*" element={<h1>Page not found</h1>} />

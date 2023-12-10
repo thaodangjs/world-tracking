@@ -8,6 +8,7 @@ const initialState = {
   cities: [],
   isLoading: false,
   error: "",
+  currentCity: {},
 };
 
 function reducer(state, action) {
@@ -16,6 +17,8 @@ function reducer(state, action) {
       return { ...state, isLoading: true };
     case "cities/loaded":
       return { ...state, isLoading: false, cities: action.payload };
+    case "city/loaded":
+      return { ...state, isLoading: false, currentCity: action.payload };
     case "reject":
       return { ...state, isLoading: false, error: action.payload };
     default:
@@ -24,7 +27,7 @@ function reducer(state, action) {
 }
 
 function CitiesProvider({ children }) {
-  const [{ cities, isLoading, error }, dispatch] = useReducer(
+  const [{ cities, isLoading, error, currentCity }, dispatch] = useReducer(
     reducer,
     initialState
   );
@@ -46,12 +49,29 @@ function CitiesProvider({ children }) {
     fetchCities();
   }, []);
 
+  async function getId(id) {
+    if (Number(id) === currentCity.id) return;
+    try {
+      dispatch({ type: "loading" });
+      const res = await fetch(`${BASE_URL}/${id}`);
+      const data = await res.json();
+      dispatch({ type: "city/loaded", payload: data });
+    } catch {
+      dispatch({
+        type: "reject",
+        payload: "There was an error loading current city",
+      });
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
         cities,
         isLoading,
         error,
+        currentCity,
+        getId,
       }}
     >
       {children}
