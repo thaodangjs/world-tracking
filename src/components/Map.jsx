@@ -13,7 +13,11 @@ import useGeolocation from "../hooks/useGeolocation";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useUrlPosition from "../hooks/useUrlPosition";
+import User from "./User";
+import { useAuth } from "../contexts/FakeAuthContext";
 function Map() {
+  const { isAuthenticated } = useAuth();
+
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const { lat, lng } = useUrlPosition();
   const { cities } = useCities();
@@ -39,6 +43,7 @@ function Map() {
 
   return (
     <div className={styles.mapContainer}>
+      {isAuthenticated && <User />}
       <MapContainer
         center={mapPosition}
         zoom={6}
