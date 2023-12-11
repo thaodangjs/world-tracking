@@ -11,14 +11,11 @@ import { useCities } from "../contexts/CitiesContext";
 import Button from "./Button";
 import useGeolocation from "../hooks/useGeolocation";
 import { useEffect, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import useUrlPosition from "../hooks/useUrlPosition";
 function Map() {
   const [mapPosition, setMapPosition] = useState([40, 0]);
-  const [searchParams] = useSearchParams();
-
-  const lat = searchParams.get("lat");
-  const lng = searchParams.get("lng");
-
+  const { lat, lng } = useUrlPosition();
   const { cities } = useCities();
   const {
     isLoading: isLoadingGeoCoding,
@@ -40,8 +37,6 @@ function Map() {
       setMapPosition([positionGeoCoding.lat, positionGeoCoding.lng]);
   }, [positionGeoCoding]);
 
-  console.log(mapPosition);
-
   return (
     <div className={styles.mapContainer}>
       <MapContainer
@@ -52,7 +47,8 @@ function Map() {
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          noWrap={true}
         />
         {cities.map((city) => (
           <Marker
@@ -85,7 +81,6 @@ function ClickDetect() {
 
   useMapEvent({
     click(e) {
-      console.log(e);
       navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
     },
   });
