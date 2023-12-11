@@ -35,6 +35,414 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Almenar de Soria",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:07:26.841Z",
+      "notes": "",
+      "position": {
+        "lat": "41.72387675421453",
+        "lng": "-2.17520135818067"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Almenar de Soria",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:07:26.841Z",
+      "notes": "",
+      "position": {
+        "lat": "41.72387675421453",
+        "lng": "-2.17520135818067"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Almenar de Soria",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:07:42.536Z",
+      "notes": "",
+      "position": {
+        "lat": "41.72387675421453",
+        "lng": "-2.17520135818067"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Louvigne-de-Bais",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-12-11T05:07:42.536Z",
+      "notes": "",
+      "position": {
+        "lat": "48.04947566299934",
+        "lng": "-1.3623389257935805"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Louvigne-de-Bais",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-12-11T05:07:42.536Z",
+      "notes": "",
+      "position": {
+        "lat": "48.04947566299934",
+        "lng": "-1.3623389257935805"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Louvigne-de-Bais",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-12-11T05:07:42.536Z",
+      "notes": "",
+      "position": {
+        "lat": "48.04947566299934",
+        "lng": "-1.3623389257935805"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Louvigne-de-Bais",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-12-11T05:07:42.536Z",
+      "notes": "",
+      "position": {
+        "lat": "48.04947566299934",
+        "lng": "-1.3623389257935805"
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Guarrate",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:07:42.536Z",
+      "notes": "",
+      "position": {
+        "lat": "41.296458654358915",
+        "lng": "-5.42710914057564"
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "Villagaton",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:09:30.569Z",
+      "notes": "",
+      "position": {
+        "lat": "42.61957953058612",
+        "lng": "-6.240200136706421"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Villagaton",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:09:37.238Z",
+      "notes": "",
+      "position": {
+        "lat": "42.61957953058612",
+        "lng": "-6.240200136706421"
+      },
+      "id": 98443207
+    },
+    {
+      "cityName": "Kilmacthomas",
+      "country": "Ireland",
+      "emoji": "🇮🇪",
+      "date": "2023-12-11T05:09:53.636Z",
+      "notes": "",
+      "position": {
+        "lat": "52.24137307129574",
+        "lng": "-7.338820919535701"
+      },
+      "id": 98443208
+    },
+    {
+      "cityName": "Ballymahon",
+      "country": "Ireland",
+      "emoji": "🇮🇪",
+      "date": "2023-12-11T05:09:58.335Z",
+      "notes": "",
+      "position": {
+        "lat": "53.65903812155607",
+        "lng": "-7.976047383330695"
+      },
+      "id": 98443209
+    },
+    {
+      "cityName": "Kilmacthomas",
+      "country": "Ireland",
+      "emoji": "🇮🇪",
+      "date": "2023-12-11T05:09:58.335Z",
+      "notes": "",
+      "position": {
+        "lat": "52.24137307129574",
+        "lng": "-7.338820919535701"
+      },
+      "id": 98443210
+    },
+    {
+      "cityName": "Glenties",
+      "country": "Ireland",
+      "emoji": "🇮🇪",
+      "date": "2023-12-11T05:10:34.377Z",
+      "notes": "",
+      "position": {
+        "lat": "54.97871510765259",
+        "lng": "-8.17379296134713"
+      },
+      "id": 98443211
+    },
+    {
+      "cityName": "Stirling",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-12-11T05:10:38.637Z",
+      "notes": "",
+      "position": {
+        "lat": "56.39085462608499",
+        "lng": "-4.284831757343649"
+      },
+      "id": 98443212
+    },
+    {
+      "cityName": "Hurm",
+      "country": "Austria",
+      "emoji": "🇦🇹",
+      "date": "2023-12-11T05:10:41.203Z",
+      "notes": "",
+      "position": {
+        "lat": "48.173646929636305",
+        "lng": "15.380626184459883"
+      },
+      "id": 98443213
+    },
+    {
+      "cityName": "Abalessa",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-12-11T05:10:43.130Z",
+      "notes": "",
+      "position": {
+        "lat": "20.73096860632061",
+        "lng": "4.219220082517393"
+      },
+      "id": 98443214
+    },
+    {
+      "cityName": "Glubokoye",
+      "country": "Kazakhstan",
+      "emoji": "🇰🇿",
+      "date": "2023-12-27T05:10:47.000Z",
+      "notes": "",
+      "position": {
+        "lat": "50.31465408882895",
+        "lng": "82.2651512160455"
+      },
+      "id": 98443215
+    },
+    {
+      "cityName": "Yerbogachen",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2024-01-05T05:11:00.000Z",
+      "notes": "",
+      "position": {
+        "lat": "60.608707546470285",
+        "lng": "107.93087195988629"
+      },
+      "id": 98443216
+    },
+    {
+      "cityName": "Ho Chi Minh City",
+      "country": "Viet Nam",
+      "emoji": "🇻🇳",
+      "date": "2023-12-11T05:11:19.834Z",
+      "notes": "",
+      "position": {
+        "lat": "10.817882328015411",
+        "lng": "106.81460226207163"
+      },
+      "id": 98443217
+    },
+    {
+      "cityName": "Lap Vo",
+      "country": "Viet Nam",
+      "emoji": "🇻🇳",
+      "date": "2023-12-11T05:11:27.612Z",
+      "notes": "",
+      "position": {
+        "lat": "10.304878045991492",
+        "lng": "105.52922893820576"
+      },
+      "id": 98443218
+    },
+    {
+      "cityName": "Porzuna",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:11:36.477Z",
+      "notes": "",
+      "position": {
+        "lat": "39.13234731017558",
+        "lng": "-4.152657138344923"
+      },
+      "id": 98443219
+    },
+    {
+      "cityName": "Gyeongsangbuk-do",
+      "country": "Korea (the Republic of)",
+      "emoji": "🇰🇷",
+      "date": "2023-12-11T05:11:43.651Z",
+      "notes": "",
+      "position": {
+        "lat": "36.72414087008161",
+        "lng": "128.4743154192001"
+      },
+      "id": 98443220
+    },
+    {
+      "cityName": "Dunhua",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2023-12-11T05:12:00.748Z",
+      "notes": "",
+      "position": {
+        "lat": "43.43782051759726",
+        "lng": "128.75975359532933"
+      },
+      "id": 98443221
+    },
+    {
+      "cityName": "Champtoce-sur-Loire",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-12-11T05:14:10.169Z",
+      "notes": "",
+      "position": {
+        "lat": "47.45841568025865",
+        "lng": "-0.9228126974099738"
+      },
+      "id": 98443222
+    },
+    {
+      "cityName": "Figuig",
+      "country": "Morocco",
+      "emoji": "🇲🇦",
+      "date": "2023-12-11T05:14:31.584Z",
+      "notes": "",
+      "position": {
+        "lat": "33.47161594391805",
+        "lng": "-2.900268477574226"
+      },
+      "id": 98443223
+    },
+    {
+      "cityName": "Cuenca",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:19:01.670Z",
+      "notes": "",
+      "position": {
+        "lat": "40.096966265696935",
+        "lng": "-2.0653427037270955"
+      },
+      "id": 98443224
+    },
+    {
+      "cityName": "Atienza",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:19:41.280Z",
+      "notes": "",
+      "position": {
+        "lat": "41.16399057003971",
+        "lng": "-2.9003554613471314"
+      },
+      "id": 98443225
+    },
+    {
+      "cityName": "Gyeongsangbuk-do",
+      "country": "Korea (the Republic of)",
+      "emoji": "🇰🇷",
+      "date": "2023-12-11T05:29:45.348Z",
+      "notes": "",
+      "position": {
+        "lat": "36.52879348403427",
+        "lng": "128.34232540937896"
+      },
+      "id": 98443226
+    },
+    {
+      "cityName": "Monferran-Saves",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-12-11T05:30:30.944Z",
+      "notes": "",
+      "position": {
+        "lat": "43.61357789950873",
+        "lng": "1.0106996209728172"
+      },
+      "id": 98443227
+    },
+    {
+      "cityName": "Bailleau-Armenonville",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-12-11T05:30:48.063Z",
+      "notes": "",
+      "position": {
+        "lat": "48.5321340242298",
+        "lng": "1.6259506524399827"
+      },
+      "id": 98443228
+    },
+    {
+      "cityName": "Guejar-Sierra",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-11T05:31:32.245Z",
+      "notes": "",
+      "position": {
+        "lat": "37.180528361516224",
+        "lng": "-3.295759633607081"
+      },
+      "id": 98443229
+    },
+    {
+      "cityName": "Zagora",
+      "country": "Morocco",
+      "emoji": "🇲🇦",
+      "date": "2023-12-11T05:32:08.138Z",
+      "notes": "",
+      "position": {
+        "lat": "29.97769131180308",
+        "lng": "-6.130251722402095"
+      },
+      "id": 98443230
+    },
+    {
+      "cityName": "Smara",
+      "country": "Western Sahara*",
+      "emoji": "🇪🇭",
+      "date": "2023-12-11T05:32:31.287Z",
+      "notes": "",
+      "position": {
+        "lat": "26.493332759080594",
+        "lng": "-11.117954005942034"
+      },
+      "id": 98443231
     }
   ]
 }

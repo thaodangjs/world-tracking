@@ -8,6 +8,9 @@ import Button from "./Button";
 import useUrlPosition from "../hooks/useUrlPosition";
 import Spinner from "./Spinner";
 import Message from "./Message";
+import ReactDatePicker from "react-datepicker";
+import { useCities } from "../contexts/CitiesContext";
+import { useNavigate } from "react-router-dom";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -26,6 +29,8 @@ function Form() {
   const [emoji, setEmoji] = useState("");
 
   const { lat, lng } = useUrlPosition();
+  const { createCity, isLoading: isLoadingNewCity } = useCities();
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchData() {
@@ -47,11 +52,32 @@ function Form() {
     fetchData();
   }, [lat, lng]);
 
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const newCity = {
+      cityName,
+      country,
+      emoji,
+      date,
+      notes,
+      position: {
+        lat,
+        lng,
+      },
+    };
+    if (!cityName || !date) return;
+    await createCity(newCity);
+    navigate("/app");
+  }
+
   if (isLoading) return <Spinner />;
   if (!country) return <Message message="There is no city here, click again" />;
 
   return (
-    <form className={styles.form}>
+    <form
+      className={`${styles.form} ${isLoadingNewCity ? styles.loading : ""}`}
+      onSubmit={handleSubmit}
+    >
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
@@ -64,10 +90,11 @@ function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
-        <input
+        <ReactDatePicker
           id="date"
-          onChange={(e) => setDate(e.target.value)}
-          value={date}
+          dateFormat="dd/MM/yyyy"
+          selected={date}
+          onChange={(date) => setDate(date)}
         />
       </div>
 
