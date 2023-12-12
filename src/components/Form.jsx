@@ -1,8 +1,13 @@
 // "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=0&longitude=0"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import styles from "./Form.module.css";
+import useUrlPosition from "../hooks/useUrlPosition";
+import Message from "./Message";
+import Button from "./Button";
+import ButtonBack from "./ButtonBack";
+import { useNavigate } from "react-router-dom";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -13,10 +18,31 @@ export function convertToEmoji(countryCode) {
 }
 
 function Form() {
+  const { lat, lng } = useUrlPosition();
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    async function fetchInfo() {
+      const res = await fetch(
+        `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`
+      );
+      const data = await res.json();
+      setCityName(data.city || data.locality || "");
+      setCountry(data.countryName || "");
+    }
+    fetchInfo();
+  }, [lat, lng]);
+
+  function handleBack(e) {
+    e.preventDefault();
+    navigate(-1);
+  }
+
+  if (!country) return <Message message="There is no city here, click again" />;
 
   return (
     <form className={styles.form}>
@@ -49,8 +75,8 @@ function Form() {
       </div>
 
       <div className={styles.buttons}>
-        <button>Add</button>
-        <button>&larr; Back</button>
+        <Button type="primary">Add</Button>
+        <ButtonBack onClick={handleBack} />
       </div>
     </form>
   );
