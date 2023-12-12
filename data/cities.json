@@ -37,124 +37,52 @@
       "id": 98443197
     },
     {
-      "cityName": "Thi Xa Tan Uyen",
-      "country": "Viet Nam",
-      "emoji": "",
-      "date": "2023-12-12T08:29:52.353Z",
+      "cityName": "Caupenne-d'Armagnac",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-12-12T16:32:45.514Z",
       "notes": "",
       "position": {
-        "lat": null,
-        "lng": null
+        "lat": "43.785548695094654",
+        "lng": "-0.06591519267213242"
       },
       "id": 98443198
     },
     {
-      "cityName": "Thi Xa Tan Uyen",
+      "cityName": "Ho Chi Minh City",
       "country": "Viet Nam",
-      "emoji": "",
-      "date": "2023-12-12T08:31:42.315Z",
+      "emoji": "🇻🇳",
+      "date": "2023-12-12T16:33:00.985Z",
       "notes": "",
       "position": {
-        "lat": null,
-        "lng": null
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Thi Xa Tan Uyen",
-      "country": "Viet Nam",
-      "emoji": "",
-      "date": "2023-12-12T08:32:06.298Z",
-      "notes": "",
-      "position": {
-        "lat": null,
-        "lng": null
-      },
-      "id": 98443200
-    },
-    {
-      "cityName": "Thi Xa Tan Uyen",
-      "country": "Viet Nam",
-      "emoji": "",
-      "date": "2023-12-12T08:32:06.298Z",
-      "notes": "",
-      "position": {
-        "lat": null,
-        "lng": null
-      },
-      "id": 98443201
-    },
-    {
-      "cityName": "Thi Xa Tan Uyen",
-      "country": "Viet Nam",
-      "emoji": "",
-      "date": "2023-12-12T08:32:22.851Z",
-      "notes": "",
-      "position": {
-        "lat": null,
-        "lng": null
-      },
-      "id": 98443202
-    },
-    {
-      "cityName": "Thi Xa Tan Uyen",
-      "country": "Viet Nam",
-      "emoji": "",
-      "date": "2023-12-12T08:32:38.782Z",
-      "notes": "",
-      "position": {
-        "lat": null,
-        "lng": null
+        "lat": "10.7839488",
+        "lng": "106.610688"
       },
       "id": 98443203
     },
     {
-      "cityName": "Calatayud",
+      "cityName": "Losacio",
       "country": "Spain",
-      "emoji": "",
-      "date": "2023-12-12T08:32:45.027Z",
+      "emoji": "🇪🇸",
+      "date": "2023-12-12T16:33:23.821Z",
       "notes": "",
       "position": {
-        "lat": "41.39502144948749",
-        "lng": "-1.581964624131398"
+        "lat": "41.72034531351556",
+        "lng": "-6.042225994946311"
       },
       "id": 98443204
     },
     {
-      "cityName": "Rogassa",
-      "country": "Algeria",
-      "emoji": "",
-      "date": "2023-12-12T08:32:48.329Z",
-      "notes": "",
-      "position": {
-        "lat": "33.8928397364635",
-        "lng": "0.9886612642135041"
-      },
-      "id": 98443205
-    },
-    {
-      "cityName": "Mansoura",
+      "cityName": "Hadj Mechri",
       "country": "Algeria",
       "emoji": "🇩🇿",
-      "date": "2023-12-12T08:34:41.937Z",
+      "date": "2023-12-12T16:33:27.309Z",
       "notes": "",
       "position": {
-        "lat": "32.0294913841755",
-        "lng": "3.581433776354235"
+        "lat": "34.03160598237897",
+        "lng": "1.6918251293035305"
       },
-      "id": 98443206
-    },
-    {
-      "cityName": "Mayorga",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-12-12T08:34:51.900Z",
-      "notes": "",
-      "position": {
-        "lat": "42.132532663409215",
-        "lng": "-5.273230219519901"
-      },
-      "id": 98443207
+      "id": 98443205
     }
   ]
 }

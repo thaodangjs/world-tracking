@@ -9,6 +9,7 @@ import Button from "./Button";
 import ButtonBack from "./ButtonBack";
 import { useNavigate } from "react-router-dom";
 import { useCities } from "../contexts/CitiesContext";
+import ReactDatePicker from "react-datepicker";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -78,10 +79,11 @@ function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
-        <input
+        <ReactDatePicker
           id="date"
-          onChange={(e) => setDate(e.target.value)}
-          value={date}
+          selected={date}
+          onChange={(date) => setDate(date)}
+          dateFormat="dd/MM/yyyy"
         />
       </div>
 
@@ -101,6 +103,5 @@ function Form() {
     </form>
   );
 }
-//add date-picker
 
 export default Form;

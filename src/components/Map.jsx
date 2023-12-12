@@ -15,6 +15,7 @@ import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 
 import L from "leaflet";
+import User from "./User";
 
 function Map() {
   const { cities } = useCities();
@@ -49,6 +50,7 @@ function Map() {
 
   return (
     <div className={styles.mapContainer}>
+      <User />
       <MapContainer
         center={mapPosition}
         zoom={6}
