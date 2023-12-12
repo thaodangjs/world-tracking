@@ -18,6 +18,12 @@ function reducer(state, action) {
       return { ...state, isLoading: false, cities: action.payload };
     case "city/loaded":
       return { ...state, isLoading: false, currentCity: action.payload };
+    case "city/created":
+      return {
+        ...state,
+        isLoading: false,
+        cities: [...state.cities, action.payload],
+      };
     case "reject":
       return { ...state, isLoading: false, error: action.payload };
     default:
@@ -63,6 +69,24 @@ function CitiesProvider({ children }) {
     }
   }
 
+  async function createCity(newCity) {
+    try {
+      dispatch({ type: "loading" });
+      const res = await fetch(`${BASE_URL}`, {
+        method: "POST",
+        body: JSON.stringify(newCity),
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await res.json();
+      dispatch({ type: "city/created", payload: data });
+    } catch {
+      dispatch({
+        type: "reject",
+        payload: "There was an error creating new city",
+      });
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -70,6 +94,7 @@ function CitiesProvider({ children }) {
         currentCity,
         isLoading,
         getCity,
+        createCity,
       }}
     >
       {children}

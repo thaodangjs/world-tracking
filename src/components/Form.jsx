@@ -8,6 +8,7 @@ import Message from "./Message";
 import Button from "./Button";
 import ButtonBack from "./ButtonBack";
 import { useNavigate } from "react-router-dom";
+import { useCities } from "../contexts/CitiesContext";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -21,9 +22,11 @@ function Form() {
   const { lat, lng } = useUrlPosition();
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
+  const [emoji, setEmoji] = useState("");
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
   const navigate = useNavigate();
+  const { createCity } = useCities();
 
   useEffect(() => {
     async function fetchInfo() {
@@ -33,6 +36,8 @@ function Form() {
       const data = await res.json();
       setCityName(data.city || data.locality || "");
       setCountry(data.countryName || "");
+      setEmoji(convertToEmoji(data.countryCode) || "");
+      console.log(data);
     }
     fetchInfo();
   }, [lat, lng]);
@@ -42,10 +47,25 @@ function Form() {
     navigate(-1);
   }
 
+  async function handleSubmit(e) {
+    e.preventDefault();
+    if (!cityName || !date) return;
+    const newCity = {
+      cityName,
+      country,
+      emoji,
+      date,
+      notes,
+      position: { lat, lng },
+    };
+    await createCity(newCity);
+    navigate("/app");
+  }
+
   if (!country) return <Message message="There is no city here, click again" />;
 
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
@@ -53,7 +73,7 @@ function Form() {
           onChange={(e) => setCityName(e.target.value)}
           value={cityName}
         />
-        {/* <span className={styles.flag}>{emoji}</span> */}
+        <span className={styles.flag}>{emoji}</span>
       </div>
 
       <div className={styles.row}>
@@ -81,5 +101,6 @@ function Form() {
     </form>
   );
 }
+//add date-picker
 
 export default Form;

@@ -7,12 +7,15 @@ import {
   useMapEvent,
 } from "react-leaflet";
 import styles from "./Map.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useCities } from "../contexts/CitiesContext";
 import useUrlPosition from "../hooks/useUrlPosition";
 import useGeolocation from "../hooks/useGeoLocation";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+
+import L from "leaflet";
+
 function Map() {
   const { cities } = useCities();
   const { lat, lng } = useUrlPosition();
@@ -29,18 +32,20 @@ function Map() {
     if (lat && lng) setMapPosition([lat, lng]);
   }, [lat, lng]);
 
-  function handleGetPosition() {
+  function handleGetPosition(e) {
+    e.preventDefault();
+
     getGeoPosition();
-    if (positionGeoCoding.lat)
-      navigate(
-        `form?lat=${positionGeoCoding.lat}&lng=${positionGeoCoding.lng}`
-      );
   }
 
   useEffect(() => {
-    if (positionGeoCoding.lat && positionGeoCoding.lng)
+    if (positionGeoCoding.lat && positionGeoCoding.lng) {
       setMapPosition([positionGeoCoding.lat, positionGeoCoding.lng]);
-  }, [positionGeoCoding.lat, positionGeoCoding.lng]);
+      navigate(
+        `form?lat=${positionGeoCoding.lat}&lng=${positionGeoCoding.lng}`
+      );
+    }
+  }, [positionGeoCoding.lat, positionGeoCoding.lng, navigate]);
 
   return (
     <div className={styles.mapContainer}>
@@ -65,9 +70,11 @@ function Map() {
         <ChangeCenter position={mapPosition} />
         <DetectClick />
         {!positionGeoCoding.lat && (
-          <Button type="position" onClick={handleGetPosition}>
-            {isLoadingGeoCoding ? "loading" : "use your position"}
-          </Button>
+          <ButtonWrapper>
+            <Button type="position" onClick={handleGetPosition}>
+              {isLoadingGeoCoding ? "loading" : "use your position"}
+            </Button>
+          </ButtonWrapper>
         )}
       </MapContainer>
     </div>
@@ -86,6 +93,18 @@ function DetectClick() {
       navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
     },
   });
+}
+
+function ButtonWrapper({ children }) {
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      L.DomEvent.disableClickPropagation(buttonRef.current);
+    }
+  }, []);
+
+  return <div ref={buttonRef}>{children}</div>;
 }
 
 export default Map;

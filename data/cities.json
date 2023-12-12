@@ -35,6 +35,126 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Thi Xa Tan Uyen",
+      "country": "Viet Nam",
+      "emoji": "",
+      "date": "2023-12-12T08:29:52.353Z",
+      "notes": "",
+      "position": {
+        "lat": null,
+        "lng": null
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Thi Xa Tan Uyen",
+      "country": "Viet Nam",
+      "emoji": "",
+      "date": "2023-12-12T08:31:42.315Z",
+      "notes": "",
+      "position": {
+        "lat": null,
+        "lng": null
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Thi Xa Tan Uyen",
+      "country": "Viet Nam",
+      "emoji": "",
+      "date": "2023-12-12T08:32:06.298Z",
+      "notes": "",
+      "position": {
+        "lat": null,
+        "lng": null
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Thi Xa Tan Uyen",
+      "country": "Viet Nam",
+      "emoji": "",
+      "date": "2023-12-12T08:32:06.298Z",
+      "notes": "",
+      "position": {
+        "lat": null,
+        "lng": null
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Thi Xa Tan Uyen",
+      "country": "Viet Nam",
+      "emoji": "",
+      "date": "2023-12-12T08:32:22.851Z",
+      "notes": "",
+      "position": {
+        "lat": null,
+        "lng": null
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Thi Xa Tan Uyen",
+      "country": "Viet Nam",
+      "emoji": "",
+      "date": "2023-12-12T08:32:38.782Z",
+      "notes": "",
+      "position": {
+        "lat": null,
+        "lng": null
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Calatayud",
+      "country": "Spain",
+      "emoji": "",
+      "date": "2023-12-12T08:32:45.027Z",
+      "notes": "",
+      "position": {
+        "lat": "41.39502144948749",
+        "lng": "-1.581964624131398"
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Rogassa",
+      "country": "Algeria",
+      "emoji": "",
+      "date": "2023-12-12T08:32:48.329Z",
+      "notes": "",
+      "position": {
+        "lat": "33.8928397364635",
+        "lng": "0.9886612642135041"
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "Mansoura",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-12-12T08:34:41.937Z",
+      "notes": "",
+      "position": {
+        "lat": "32.0294913841755",
+        "lng": "3.581433776354235"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Mayorga",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-12T08:34:51.900Z",
+      "notes": "",
+      "position": {
+        "lat": "42.132532663409215",
+        "lng": "-5.273230219519901"
+      },
+      "id": 98443207
     }
   ]
 }
