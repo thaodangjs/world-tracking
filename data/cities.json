@@ -37,52 +37,28 @@
       "id": 98443197
     },
     {
-      "cityName": "Caupenne-d'Armagnac",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-12-12T16:32:45.514Z",
-      "notes": "",
-      "position": {
-        "lat": "43.785548695094654",
-        "lng": "-0.06591519267213242"
-      },
-      "id": 98443198
-    },
-    {
       "cityName": "Ho Chi Minh City",
       "country": "Viet Nam",
       "emoji": "🇻🇳",
-      "date": "2023-12-12T16:33:00.985Z",
+      "date": "2023-12-15T07:51:50.603Z",
       "notes": "",
       "position": {
-        "lat": "10.7839488",
-        "lng": "106.610688"
+        "lat": "10.7360575",
+        "lng": "106.5906249"
       },
-      "id": 98443203
+      "id": 98443208
     },
     {
-      "cityName": "Losacio",
+      "cityName": "Villarrubia de los Ojos",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2023-12-12T16:33:23.821Z",
+      "date": "2023-12-15T07:54:02.955Z",
       "notes": "",
       "position": {
-        "lat": "41.72034531351556",
-        "lng": "-6.042225994946311"
+        "lat": "39.198248318928414",
+        "lng": "-3.5775208247634698"
       },
-      "id": 98443204
-    },
-    {
-      "cityName": "Hadj Mechri",
-      "country": "Algeria",
-      "emoji": "🇩🇿",
-      "date": "2023-12-12T16:33:27.309Z",
-      "notes": "",
-      "position": {
-        "lat": "34.03160598237897",
-        "lng": "1.6918251293035305"
-      },
-      "id": 98443205
+      "id": 98443209
     }
   ]
 }
