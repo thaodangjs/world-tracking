@@ -35,6 +35,138 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Marsabit",
+      "country": "Kenya",
+      "emoji": "🇰🇪",
+      "date": "2023-12-18T03:57:27.164Z",
+      "notes": "",
+      "position": {
+        "lat": "2.4601811810210052",
+        "lng": "37.68310546875"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Barentu",
+      "country": "Eritrea",
+      "emoji": "🇪🇷",
+      "date": "2023-12-18T04:03:46.269Z",
+      "notes": "",
+      "position": {
+        "lat": "14.774882506516272",
+        "lng": "37.705078125"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Beryslav",
+      "country": "Ukraine",
+      "emoji": "🇺🇦",
+      "date": "2023-12-18T04:03:47.988Z",
+      "notes": "",
+      "position": {
+        "lat": "46.98025235521883",
+        "lng": "33.31054687500001"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Lendery",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2023-12-18T04:03:50.348Z",
+      "notes": "",
+      "position": {
+        "lat": "63.31268278043484",
+        "lng": "31.552734375000004"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Glubokoye",
+      "country": "Kazakhstan",
+      "emoji": "🇰🇿",
+      "date": "2023-12-18T04:03:54.137Z",
+      "notes": "",
+      "position": {
+        "lat": "50.51342652633956",
+        "lng": "82.61718750000001"
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Zhiduo Xian",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2023-12-18T04:03:55.873Z",
+      "notes": "",
+      "position": {
+        "lat": "34.016241889667036",
+        "lng": "94.57031250000001"
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "Gangwon",
+      "country": "Korea (the Republic of)",
+      "emoji": "🇰🇷",
+      "date": "2023-12-18T04:03:58.520Z",
+      "notes": "",
+      "position": {
+        "lat": "38.548165423046584",
+        "lng": "128.67187500000003"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Macheng",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2023-12-18T04:04:00.450Z",
+      "notes": "",
+      "position": {
+        "lat": "31.052933985705163",
+        "lng": "115.31250000000001"
+      },
+      "id": 98443207
+    },
+    {
+      "cityName": "Dera",
+      "country": "Ethiopia",
+      "emoji": "🇪🇹",
+      "date": "2023-12-18T04:29:35.261Z",
+      "notes": "",
+      "position": {
+        "lat": "10.120301632173907",
+        "lng": "38.54003906250001"
+      },
+      "id": 98443208
+    },
+    {
+      "cityName": "Liben",
+      "country": "Ethiopia",
+      "emoji": "🇪🇹",
+      "date": "2023-12-18T04:34:27.316Z",
+      "notes": "",
+      "position": {
+        "lat": "4.959615024698026",
+        "lng": "39.63867187500001"
+      },
+      "id": 98443209
+    },
+    {
+      "cityName": "Kitui",
+      "country": "Kenya",
+      "emoji": "🇰🇪",
+      "date": "2023-12-18T04:34:30.146Z",
+      "notes": "",
+      "position": {
+        "lat": "-0.8349313860427057",
+        "lng": "38.34228515625001"
+      },
+      "id": 98443210
     }
   ]
 }
