@@ -3,6 +3,7 @@ import { createContext, useContext, useEffect, useReducer } from "react";
 const CitiesContext = createContext();
 const initialState = {
   cities: [],
+  currentCity: {},
   isLoading: false,
   error: "",
 };
@@ -13,6 +14,8 @@ function reducer(state, action) {
       return { ...state, isLoading: true };
     case "cities/loaded":
       return { ...state, isLoading: false, cities: action.payload };
+    case "city/loaded":
+      return { ...state, isLoading: false, currentCity: action.payload };
     case "reject":
       return { ...state, isLoading: false, error: action.payload };
 
@@ -22,7 +25,7 @@ function reducer(state, action) {
 }
 
 function CitiesProvider({ children }) {
-  const [{ cities, isLoading, error }, dispatch] = useReducer(
+  const [{ cities, currentCity, isLoading, error }, dispatch] = useReducer(
     reducer,
     initialState
   );
@@ -35,11 +38,29 @@ function CitiesProvider({ children }) {
         const data = await res.json();
         dispatch({ type: "cities/loaded", payload: data });
       } catch {
-        dispatch({ type: "reject" });
+        dispatch({
+          type: "reject",
+          payload: "There was an error loading cities",
+        });
       }
     }
     getCities();
   }, []);
+
+  async function getCity(id) {
+    if (currentCity.id === Number(id)) return;
+    try {
+      dispatch({ type: "loading" });
+      const res = await fetch(`http://localhost:8001/cities/${id}`);
+      const data = await res.json();
+      dispatch({ type: "city/loaded", payload: data });
+    } catch {
+      dispatch({
+        type: "reject",
+        payload: "There was an error loading city",
+      });
+    }
+  }
 
   return (
     <CitiesContext.Provider
@@ -47,6 +68,8 @@ function CitiesProvider({ children }) {
         cities,
         isLoading,
         error,
+        getCity,
+        currentCity,
       }}
     >
       {children}

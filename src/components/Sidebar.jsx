@@ -9,6 +9,9 @@ function Sidebar() {
       <Logo />
       <AppNav />
       <Outlet />
+      <footer className={styles.footer}>
+        <p className={styles.copyright}>© Copyright 2023 by WorldWise Inc.</p>
+      </footer>
     </div>
   );
 }

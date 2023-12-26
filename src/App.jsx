@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import AppLayout from "./pages/AppLayout";
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
+import City from "./components/City";
 import { CitiesProvider } from "./context/CitiesContext";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route index element={<Navigate to="cities" />} />
             <Route path="cities" element={<CityList />} />
             <Route path="countries" element={<CountryList />} />
+            <Route path="cities/:id" element={<City />} />
           </Route>
           <Route path="*" element={<p>Page not found</p>} />
         </Routes>
