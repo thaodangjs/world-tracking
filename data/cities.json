@@ -37,16 +37,28 @@
       "id": 98443197
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "cityName": "Marsabit",
+      "country": "Kenya",
+      "emoji": "🇰🇪",
+      "date": "2023-12-27T08:37:58.968Z",
+      "notes": "",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": "1.8893059628373186",
+        "lng": "37.61718750000001"
       },
-      "id": 98443191
+      "id": 98443198
+    },
+    {
+      "cityName": "Ngorongoro",
+      "country": "Tanzania, the United Republic of",
+      "emoji": "🇹🇿",
+      "date": "2023-12-27T08:38:02.090Z",
+      "notes": "",
+      "position": {
+        "lat": "-2.7455307188019398",
+        "lng": "35.48583984375001"
+      },
+      "id": 98443199
     }
   ]
 }
